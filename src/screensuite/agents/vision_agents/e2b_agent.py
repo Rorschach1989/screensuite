@@ -10,7 +10,7 @@ from e2b_desktop import Sandbox
 from PIL import Image, ImageDraw
 
 # SmolaAgents imports
-from smolagents import HfApiModel, Model, Tool, tool
+from smolagents import ApiModel, Model, Tool, tool
 from smolagents.monitoring import LogLevel
 
 from screensuite.agents.prompt import E2B_SYSTEM_PROMPT_TEMPLATE
@@ -326,7 +326,7 @@ def main():
     # Initialize model
     # model = QwenVLModel(model_path=args.model_path)
 
-    model = HfApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="hyperbolic")
+    model = ApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="hyperbolic")
 
     # Initialize agent
     agent = E2BVisionAgent(

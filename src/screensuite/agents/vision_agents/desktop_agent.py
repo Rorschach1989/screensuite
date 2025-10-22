@@ -12,7 +12,7 @@ import numpy as np
 # Qwen2.5VL imports
 # E2B imports
 from PIL import Image
-from smolagents import HfApiModel, Model, Tool, tool
+from smolagents import ApiModel, Model, Tool, tool
 from smolagents.monitoring import LogLevel
 
 from screensuite.agents.client.desktop_env_client import (
@@ -307,7 +307,7 @@ def main():
     # Initialize model
     # model = QwenVLModel(model_path=args.model_path)
 
-    model = HfApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="hyperbolic")
+    model = ApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="hyperbolic")
 
     # Initialize agent
     agent = DesktopAgent(

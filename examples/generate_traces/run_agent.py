@@ -13,7 +13,7 @@ from smolagents import (
     AgentError,
     CodeAgent,
     GoogleSearchTool,
-    HfApiModel,
+    ApiModel,
     LiteLLMModel,
     VisitWebpageTool,
 )
@@ -168,7 +168,7 @@ if __name__ == "__main__":
             max_completion_tokens=8192,
         )
     else:
-        model = HfApiModel(
+        model = ApiModel(
             model_id=args.model_id,
             provider=args.provider if not args.model_id.startswith("https") else None,
             max_tokens=8192,

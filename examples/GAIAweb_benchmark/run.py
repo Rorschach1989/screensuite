@@ -177,9 +177,9 @@ if __name__ == "__main__":
     eval_ds = eval_ds.filter(lambda row: int(row["Level"]) == 1)
     print("Running model on ", len(eval_ds), "examples")
 
-    from smolagents import HfApiModel
+    from smolagents import ApiModel
 
-    model = HfApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="nebius", max_tokens=8192)
+    model = ApiModel("Qwen/Qwen2.5-VL-72B-Instruct", provider="nebius", max_tokens=8192)
 
     # model = LiteLLMModel("gpt-4o")
 

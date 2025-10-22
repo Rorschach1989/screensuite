@@ -11,7 +11,7 @@ import numpy as np
 # E2B imports
 
 # SmolaAgents imports
-from smolagents import HfApiModel, Model, Tool, tool
+from smolagents import ApiModel, Model, Tool, tool
 from smolagents.monitoring import LogLevel
 
 
@@ -360,7 +360,7 @@ def main():
 
     # Initialize agent
     agent = AndroidAgent(
-        model=HfApiModel("Qwen/Qwen2.5-VL-7B"),
+        model=ApiModel("Qwen/Qwen2.5-VL-7B"),
         data_dir=args.data_dir,
         env=env,
         max_steps=args.max_steps,
