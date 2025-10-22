@@ -1,6 +1,6 @@
 [submodule "osworld"]
 	path = osworld
-	url = git@github.com:A-Mahla/OSWorld-smolagents.git
+	url = https://github.com/A-Mahla/OSWorld-smolagents
 	branch = amir/OSWorld-smolagent-integration
 [submodule "android_world"]
 	path = android_world
