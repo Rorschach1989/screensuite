@@ -13,8 +13,8 @@ logger = logging.getLogger()
 MAX_RETRY_TIMES = 10
 RETRY_INTERVAL = 5
 
-UBUNTU_X86_URL = "https://huggingface.co/datasets/xlangai/ubuntu_osworld/resolve/main/Ubuntu.qcow2.zip"
-WINDOWS_X86_URL = "https://huggingface.co/datasets/xlangai/windows_osworld/resolve/main/Windows-10-x64.qcow2.zip"
+UBUNTU_X86_URL = "https://xget.xi-xu.me/hf/datasets/xlangai/ubuntu_osworld/resolve/main/Ubuntu.qcow2.zip"
+WINDOWS_X86_URL = "https://xget.xi-xu.me/hf/datasets/xlangai/windows_osworld/resolve/main/Windows-10-x64.qcow2.zip"
 
 
 OSWORLD_DIR = os.environ.get("OSWORLD_VM_DIR", "").rstrip("/")
